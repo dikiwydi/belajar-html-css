@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Quicksand", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+header {
+    display: inline;
+}
+header .jumbotron h1 {
+    color: black;
+}
+main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+}
+#content {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+h1 {
+    color: #00a2c6;
+}
+h2 {
+    color: #00a2c6;
+}
+.jumbotron {
+    padding: 60px;
+    background-color: #00c8eb;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+nav {
+    background-color: #00a2c6;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+nav ul {
+    display: flex;
+    padding-inline: 4rem;
+    gap: 2rem;
+}
+nav li {
+    list-style-type: none;
+}
+nav a {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+}
+nav a:hover {
+    font-weight: bold;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 20px;
+}
+.featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+.profile header {
+    text-align: center;
+}
+.profile img {
+    width: 200px;
+}
+aside {
+    flex: 1;
+}
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #00a2c6;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+    }
+    main aside {
+        align-self: center;
+    }
+}
+@media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+}
